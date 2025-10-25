@@ -1,0 +1,175 @@
+{
+  "Abstract": {
+    "text": "In recent times, Lung cancer is the most common cause of mortality in both men and women around the world. Lung cancer is the second most well-known disease after heart disease. Although lung cancer prevention is impossible, early detection of lung cancer can effectively treat lung cancer at an early stage. The possibility of a patient's survival rate increasing if lung cancer is identified early. To detect and diagnose lung cancer in its early stages, a variety of data analysis and machine learning techniques have been applied. In this paper, we applied supervised machine learning algorithms like SVM (Support vector machine), ANN (Artificial neural networks), MLR (Multiple linear regression), and RF (random forest), to detect the early stages of lung tumors. The main purpose of this study is to examine the success of machine learning algorithms in detecting lung cancer at an early stage. When compared to all other supervised machine learning algorithms, the Random forest model produces a high result, with a 99.99% accuracy rate.",
+    "entities": {
+      "Habits": [],
+      "Treatment": [],
+      "Diagnostic Techniques": [
+        "Support Vector Machine (SVM)",
+        "Artificial Neural Network (ANN)",
+        "Multiple Linear Regression (MLR)",
+        "Random Forest (RF)",
+        "Data analysis",
+        "Machine learning"
+      ],
+      "Lung Cancer Class": [
+        "Early stage detection",
+        "Tumors (benign/malignant not explicitly mentioned here)"
+      ],
+      "ML Tools": [
+        "SVM (Support Vector Machine)",
+        "ANN (Artificial Neural Network)",
+        "MLR (Multiple Linear Regression)",
+        "RF (Random Forest)"
+      ],
+      "Image": {
+        "Description": "",
+        "Path": ""
+      }
+    }
+  },
+  "Introduction": {
+    "text": "Cancer is a wide term and the most complex disease in people’s life. Cancer can cause by the development of uncontrollable cells which can be spread anywhere in the human body. General cancer symptoms are fatigue, weight loss, pain, cough, fever, lumps, etc. Cancer is also called a tumor. To save the lives of humans it is very important to detect quickly and correctly the initial stage of cancer. There are many kinds of cancer like breast, brain, lung, liver, skin cancer, etc. Lung cancer is a form of cancer which starts that the abnormal cells cluster together. Lung cancer is the main reason for death among both men and women all over the world. Worldwide after heart disease, Lung cancer is the second most frequent disease. Uncontrollable cell growth may be the reason for the death of the cancer patient. Early examination of lung tumors is critical in decreasing the risk of death from lung tumor disease. Lung cancer can spread very quickly to the brain, liver, bones, and adrenal glands, therefore, the initial diagnosis of lung cancer is very necessary. Every year, almost 1.3 million people pass away due to lung cancer around the world. In 2018, approximately 234,030 Americans will be diagnosed of which 121,480 males and 112,350 females. Due to lung cancer, approximately 121,680 deaths will occur of which 83,550 males and 70,500 females. Common ways to diagnose lung cancer include Magnetic Resonance Imaging (MRI), CT (Computed Tomography) scan, and Positron Emission Tomography (PET). Lung carcinoma is another name for lung cancer. Lung cancer has two categories: SCLC (Small Cell Lung Cancer) and NSCLC (Non-Small Cell Lung Cancer). SCLC: It’s a generally rare form of lung cancer. Around 15% of lung cancer cases have a history of small cell lung cancer. Small lung cancer spread very quickly. NSCLC: It’s a quite frequent kind of lung cancer. Around 85% of lung cancer cases have a history of non-small cell lung cancer. This type of lung cancer is more dangerous than SCLC because it spread slowly. NSCLC is further divided into three categories: NSCLC has four stages which include Stage I, Stage II, Stage III, and Stage IV. In Stage I, cancer produces 60 to 80% in a single lung and doesn’t develop in lymph nodes or distant organs. In Stage II, 30 to 50% of cancer grows in lymph nodes, rather than distant organs. In stage III, the tumor expands 10 to 15% in nodes and builds in the center of the chest. In stage IV, the Tumor spread throughout the body. Many studies have been undertaken on the causes of lung cancer, with the conclusion that smoking is the primary cause. Smoking harms the lungs. In the United States, cigarette smoking is a factor of 80 to 90% of deaths due to lung cancer. Other tobacco products such as cigars, pipes, or snuff (a powdered form of tobacco) raise the risk of lung cancer and other kinds of cancer such as mouth cancer. The use of tobacco smoking for a long time begins with lung cancer. According to the survey, smoking caused lung cancer in 90% of males and 75 to 80% of females. It is a reality that 10 to 15% of people who never smoke in their life contain lung cancer. The reason for lung cancer may be passive smoking, air pollution, asbestos, and radon gas.",
+    "entities": {
+      "Symptoms": [
+        "Fatigue",
+        "Weight loss",
+        "Pain",
+        "Cough",
+        "Fever",
+        "Lumps",
+        "Chest discomfort",
+        "Bloody cough",
+        "Shortness of breath",
+        "Wheezing",
+        "Difficulty swallowing",
+        "Dry coughs",
+        "Snoring"
+      ],
+      "Habits": [
+        "Smoking",
+        "Alcohol"
+      ],
+      "Type of Cancer": [
+        "Breast cancer",
+        "Brain cancer",
+        "Lung cancer",
+        "Liver cancer",
+        "Skin cancer",
+        "SCLC (Small Cell Lung Cancer): ~15% of cases, spreads very quickly",
+        "NSCLC (Non-Small Cell Lung Cancer): ~85% of cases, spreads more slowly",
+        "Stage I: 60–80% tumor in one lung, no lymph node or distant spread",
+        "Stage II: 30–50% in lymph nodes, no distant organ spread",
+        "Stage III: 10–15% in lymph nodes, central chest involvement",
+        "Stage IV: Spreads throughout the body"
+      ],
+      "Statistics": [
+        "~1.3 million deaths worldwide every year due to lung cancer",
+        "2018 (U.S. data): 234,030 diagnosed (121,480 males; 112,350 females)",
+        "2018 (U.S. data): 121,680 deaths (83,550 males; 70,500 females)",
+        "Smoking causes 80–90% of U.S. lung cancer deaths",
+        "Smoking responsible for 90% of male cases and 75–80% of female cases",
+        "10–15% of non-smokers can also develop lung cancer"
+      ],
+      "Common Diagnostic Techniques": [
+        "MRI (Magnetic Resonance Imaging)",
+        "CT Scan (Computed Tomography)",
+        "PET Scan (Positron Emission Tomography)"
+      ],
+      "Image": {
+        "Description": "",
+        "Path": ""
+      }
+    }
+  },
+  "Literature Review": {
+    "text": "The section surveys prior work on lung cancer detection using image processing, machine learning, and hybrid approaches. Various datasets, preprocessing steps, classifiers, segmentation, and feature extraction methods are used across different studies, with performance evaluated using metrics like accuracy, F1 score, precision, and recall. Classifiers such as KNN, SVM, Decision Tree, Naïve Bayes, Random Forest, MLP, CNN, ANN, BRNN, and XGBoost are applied, with accuracy results ranging from ~70% (3D CNN) to ~99.5% (BRNN)."
+  },
+  "Methodology": {
+    "Text": "This study focuses on early detection of lung cancer using machine learning techniques. Four classifiers—ANN, SVM, Random Forest, and Multiple Linear Regression—are applied to a lung cancer dataset to determine the most accurate model.",
+    "Entities": {
+      "Dataset Features": [
+        "Occupational Hazards",
+        "Dust Allergy",
+        "Chronic Lung Disease",
+        "Balanced Diet",
+        "Genetic Risk",
+        "Age",
+        "Gender",
+        "Air Pollution",
+        "Alcohol Use",
+        "Obesity",
+        "Smoking",
+        "Chest Discomfort",
+        "Bloody Cough",
+        "Fatigue",
+        "Passive Smoking",
+        "Weight Loss",
+        "Shortness of Breath",
+        "Finger Clubbing",
+        "Frequent Colds",
+        "Wheezing",
+        "Difficulty Swallowing",
+        "Dry Coughs",
+        "Snoring"
+      ],
+      "Proposed Models": [
+        "Artificial Neural Network (ANN)",
+        "Support Vector Machine (SVM)",
+        "Random Forest",
+        "Multiple Linear Regression (MLR)"
+      ]
+    },
+    "Image": {
+      "Description": "The diagram illustrates the proposed methodology for lung cancer detection using machine learning. The workflow starts with the Dataset, followed by Preprocessing, then Splitting into Training and Testing sets. Training data is passed into four models (ANN, SVM, Random Forest, and Multiple Linear Regression). Outputs from these models go into a Classification step, which categorizes cases into three labels: Malignant (2), Benign (1), and No Cancer (0). The results are used for Prediction and for generating a Comparison Result across models.",
+      "Path": "Page:11"
+    },
+    "Dataset Description": {
+      "Text": "The dataset was obtained from data.world (https://data.world/cancerdatahp/lung-cancerdata) in CSV format. It contains 1000 instances and 25 columns (24 predictive features and 1 class label). The class label has values: 2 = Malignant cancer, 1 = Benign cancer, 0 = No cancer. LabelEncoder from SciKit Learn was used to convert text labels into numbers.",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      }
+    },
+    "Solution Approach": {
+      "Tools and Technologies": {
+        "Text": "Python, SciKit Learn (LabelEncoder), and CSV dataset handling were used for preprocessing and modeling.",
+        "Entities": {
+          "Diagnostic Tools Used": [
+            "Computer-Aided Detection System",
+            "Supervised Machine Learning Models"
+          ]
+        },
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      },
+      "Algorithm and Design": {
+        "Text": "Dataset preprocessing (noise removal), train-test split, and classification using ANN, SVM, Random Forest, and Multiple Linear Regression were performed. Results were compared to determine the best-performing model.",
+        "Entities": {},
+        "Image": {
+          "Description": "",
+          "Path": ""
+        }
+      }
+    },
+    "Architecture Diagram": {
+      "Text": "Figure 1 shows the overall workflow for lung cancer detection using machine learning.",
+      "Entities": {},
+      "Image": {
+        "Description": "The workflow starts from the Dataset, followed by Preprocessing, Training and Testing Split, classification using four models (ANN, SVM, RF, MLR), and ends with Prediction and Model Comparison.",
+        "Path": "Page:11"
+      }
+    },
+    "Experimental Setup": {
+      "Text": "The dataset was preprocessed, divided into training and testing sets, and classified using different ML models into Malignant, Benign, and No Cancer categories. Results from all models were compared to identify the most accurate one.",
+      "Entities": {},
+      "Image": {
+        "Description": "",
+        "Path": ""
+      }
+    }
+  }
+}
