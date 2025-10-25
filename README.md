@@ -106,3 +106,5 @@ Deploy model to Hugging Face Spaces or Render.
 
 👨‍💻 Author
 Rajan Pandit
+<img width="1473" height="661" alt="Screenshot 2025-10-22 101301" src="https://github.com/user-attachments/assets/26957add-214e-44ca-b880-f0527b598001" />
+
